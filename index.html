@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Регистрационна форма</title> 
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- Изображение за фон на страницата --> 
+        <div class="bg-image"> </div>
+        <!-- Създаване на контейнер -->
+        <div class="container"> 
+            <!-- Основни части на контейнера за регистрация -->
+            <div class="title">Регистрационна форма</div>
+            <!-- Съобщение за успех на регистрация -->
+            <p id="success_msg"> </p>
+            <!-- Форма с полета за данни -->
+            <form class="form" id="form">
+                <div class="user-details">
+                    <!-- Поле за име -->
+                    <div class="input-box-firstName">
+                        <label class="details">Име:</label><br>
+                        <input class="input-details" type="text" name="firstName" id="firstName" value="" placeholder="Име" required>
+                    </div>
+                    <!-- Поле за фамилия -->
+                    <div class="input-box-lastName">
+                        <label class="details">Фамилия:</label><br>
+                        <input class="input-details" type="text" name="lastName" id="lastName" value="" placeholder="Фамилия" required>
+                    </div>
+                    <!-- Поле за години -->
+                    <div class="input-box-age">
+                        <label class="details">Години:</label><br>
+                        <input  min="10" max="96" class="input-details" type="number" name="age" id="age" value="" required>
+                    </div>
+                    <!-- Поле за имейл -->
+                    <div class="input-box-email">
+                        <label class="details">Имейл:</label><br>
+                        <input class="input-details" type="email" name="email" id="email" value="" placeholder="useremail@gmail.com" required>
+                        <p id="error_email"> </p>
+                    </div>
+                    <!-- Поле за потребителско име -->
+                    <div class="input-box-username">
+                        <label class="details">Потребителско име:</label><br>
+                        <input class="input-details" type="text" name="username" id="username" value="" placeholder="Потребителско име" required>
+                        <p id="error_username"> </p>
+                    </div>
+                    <!-- Поле за парола -->
+                    <div class="input-box-password">
+                        <label class="details">Парола:</label><br>
+                        <span>
+                            <i class="fa fa-eye-slash" aria-hidden="true" id="slash_eye"  onclick="toggle()"></i>
+                            <i class="fa fa-eye" aria-hidden="true" id="eye" style="display: none;" onclick="toggle()"></i>
+                        </span>
+                        <input class="input-details" type="password" name="password" id="password" value="" placeholder="Парола" required>
+                        <p id="error_password"> </p>
+                    </div>
+                </div>
+                <!-- Бутон за регистрация -->
+                <button type="submit" id="submit">Регистрирай ме</button>
+            </form>
+        </div>
+    </body>
+    <!-- Свързване на HTML с JavaScript -->
+    <script src="main.js"></script>
+</html>

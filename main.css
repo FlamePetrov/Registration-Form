@@ -1,0 +1,194 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=League+Spartan&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-size: x-large;
+    
+}
+
+#success_msg{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    
+    color:rgb(41, 129, 41);
+    font-size: 20px;
+    text-align: center;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.success_msg{
+    background: rgba(0, 255, 30, 0.2);
+}
+
+/* Съобщение за грешка при поле с парола */
+#error_password{
+    color: red;
+    font-size: medium;
+    margin-top: 0;  
+}
+
+/* Съобщения за грешка при поле с потребителско име */
+#error_username{
+    color: red;
+    font-size: medium;
+    margin-top: 0;
+}
+
+/* Съобщение за грешка при поле с имейл */
+#error_email{
+    color: red;
+    font-size: medium;
+    margin-top: 0;
+}
+
+.bg-image{
+
+    width: 100%; 
+    height: 100%;
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+
+}
+
+body{
+
+    display: flex; /* Подреждане на предмети в редица */
+    align-items: center; /* Центриране на предмети */
+    justify-content: center; /* Центриране на съдържание */
+    
+}
+
+/* Контейнер */
+.container{
+    /* Позициониране на контейнера */
+    position: absolute;
+    /* Удебеляване на шрифт */
+    font-weight: bold;
+    /* Премахване на цвета на фона */
+    background-color: none;
+    /* Замъгляване на фон на контейнер */
+    background: linear-gradient(to top, rgb(0,0,0, 0.3) 50%, 
+    rgb(0,0,0, 0.3) 50%);
+    /* Задаване на размери на контейнера */
+    width: 700px;
+    max-width: 100%;
+    /* Заобляне на рамка */
+    border-radius: 5px;
+
+}
+
+/* Оразмеряване на формата */
+.container #form{
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+
+/* заглавие */
+.title{
+    /* Оразмеряване */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Промяна на размер и дебелина на шрифт */
+    font-weight: bold;
+    font-size: 40px;
+
+    /* Центриране на текст */
+    text-align: center;  
+}
+
+
+/* Заместител */
+::placeholder{
+    /* Промяна на големина на шрифт */
+    font-size: large;
+    /* Задаване на бял цвят */
+    color: #fff; 
+}
+
+.user-details{
+    padding: 10px 0;
+}
+
+.user-details div .input-details{
+    /* Оразмеряване на полета за входяща информация */
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Стилизация на рамка */
+    border: none;
+    border-radius: 5px;
+    border-bottom: 5px solid #000;
+    /* Стилизация на детайли */
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    
+}
+
+.user-details div .input-details:focus{
+    background: rgb(255, 255, 255, 0.2);
+} 
+#firstname, #lastname, #age, #email, #username, #password{
+    color: #fff;
+}
+
+
+/* бутон */
+#submit{
+    
+    color: #fff;
+    cursor: pointer;
+
+    /* Задаване прозрачност на бутона */
+    background: transparent;
+    /* Премахване на визуалната рамка */
+    border: none;
+    padding: 5px 0;
+    /* Заобляне на рамката */
+    border-radius: 5px;
+    width: 100%;
+   
+    margin: 10px 0;
+
+    /* Анимация за бутон */
+    transition: ease-in-out 0.35s;
+    outline: none;
+
+    /* Промяна на големина и дебелина на шрифт */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Смяна на цвят на бутон*/
+#submit:hover{
+    /* когато мишката е върху бутона проме */
+    background-color: #000;
+
+}
+
+
+/* емотикони */
+span{
+    position: absolute;
+    left: 650px;
+    top: 650px; 
+
+    cursor: pointer;
+}
+.fa{
+    color: #000;
+}
